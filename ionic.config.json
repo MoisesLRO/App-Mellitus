@@ -1,0 +1,7 @@
+{
+  "name": "Mellitus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
