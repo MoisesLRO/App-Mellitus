@@ -1,0 +1,29 @@
+
+<ion-content [fullscreen]="true">
+  <ion-menu class="topo-home">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-menu>
+  <div>
+    <ion-img>
+      <img src="img1" alt="">
+    </ion-img>
+  </div>
+  <ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="calendario">
+        <ion-icon name="calendar-outline"></ion-icon>
+        Histórico
+      </ion-tab-button>
+      <ion-tab-button tab="menu">
+        <ion-icon name="home-outline"></ion-icon>
+        Menu
+      </ion-tab-button>
+      <ion-tab-button tab="receita">
+        <ion-icon name="restaurant-outline"></ion-icon>
+        Receitas
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+const img1 = '../assets/img/Artboard-1.jpeg'
 const routes: Routes = [
   {
     path: 'home',
@@ -10,6 +11,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'home-principal',
+    loadChildren: () => import('./home-principal/home-principal.module').then( m => m.HomePrincipalPageModule)
   },
 ];
 

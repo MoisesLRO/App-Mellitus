@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  //rootPage: any = 'SigninPage';
 
-  constructor() {}
+  constructor(
+    private navCtrl: NavController,
+  ) {}
+
+  async Cadastrar(){
+    this.navCtrl.navigateForward('cadastro')
+  }
+
+  async Entrar(){
+    this.navCtrl.navigateForward('home-principal')
+  }
 
 }

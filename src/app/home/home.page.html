@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"></ion-img>
+    <div class="login-section ion-padding">
+      <div class="heading ion-padding">
+        <h1>Bem vindo A Mellitus</h1>
+        <p>Não Tem Conta? Cadastra-se</p>
+      </div>
+      <div class="login-form ion-padding">
+        <div class="form-input">
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+        </div>
+        <div class="form-input">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        </div>
+      </div>
+      <div class="action-button ion-padding">
+        <ion-button size="large" class="login-button" (click)="Entrar()">Entrar</ion-button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-button class="signup-button" size="large" fill="out" (click)="Cadastrar()"><p>Cadastra-se</p></ion-button>
+      </div>
+    </div>
+  </ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
