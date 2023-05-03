@@ -11,7 +11,7 @@ export class HomePage {
   //rootPage: any = 'SigninPage';
 
   constructor(
-    private navCtrl: NavController,
+    private navCtrl: NavController
   ) {}
 
   async Cadastrar(){
