@@ -7,8 +7,8 @@ import { NavController } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
-  //rootPage: any = 'SigninPage';
 
   constructor(
     private navCtrl: NavController
